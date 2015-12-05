@@ -1,0 +1,16 @@
+{
+  "name": "web-audio-ios",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test.js",
+    "publish": "npm run test"
+  },
+  "devDependencies": {
+    "tap": "^1.3.2",
+    "standard": "4.5.4"
+  },
+  "license": "MIT",
+  "description": "unlock web-audio in ios/safari based on \"How to: Web Audio on iOS by Paul Bakaus\"",
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)"
+}
