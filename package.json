@@ -10,5 +10,19 @@
   },
   "license": "MIT",
   "description": "unlock web-audio in ios/safari based on \"How to: Web Audio on iOS by Paul Bakaus\"",
-  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)"
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wham-js/web-audio-ios.git"
+  },
+  "keywords": [
+    "web audio",
+    "ios",
+    "safari",
+    "hack"
+  ],
+  "bugs": {
+    "url": "https://github.com/wham-js/web-audio-ios/issues"
+  },
+  "homepage": "https://github.com/wham-js/web-audio-ios#readme"
 }
