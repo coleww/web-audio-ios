@@ -2,3 +2,4 @@
 .DS_Store
 /www/bundle.js
 npm-debug.log
+bundle.js
