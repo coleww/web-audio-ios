@@ -1,6 +1,6 @@
 {
   "name": "web-audio-ios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "build": "browserify demo.js -o bundle.js",
