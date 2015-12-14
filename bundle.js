@@ -12,7 +12,7 @@ g.connect(ac.destination)
 
 
 
-wai(window, ac, function (unlocked) {
+wai(document.body, ac, function (unlocked) {
   console.log('boop\'d yah')
   osc.start(ac.currentTime)
 })
@@ -21,19 +21,19 @@ wai(window, ac, function (unlocked) {
 },{"./":2}],2:[function(require,module,exports){
 module.exports = function (el, ac, cb) {
   function handleIOS(e) {
-    console.log(e)
     var buffer = ac.createBuffer(1, 1, 22050)
     var source = ac.createBufferSource()
     source.buffer = buffer
     source.connect(ac.destination)
     source.start(ac.currentTime)
     setTimeout(function() {
+      el.removeEventListener('mousedown', handleIOS, false)
+      el.removeEventListener('touchend', handleIOS, false)
       cb(source.playbackState === source.PLAYING_STATE || source.playbackState === source.FINISHED_STATE)
     }, 1)
-    el.removeEventListener('mousedown', handleIOS, false)
   }
   el.addEventListener('mousedown', handleIOS, false)
-
+  el.addEventListener('touchend', handleIOS, false)
 }
 
 },{}]},{},[1]);

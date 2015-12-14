@@ -11,7 +11,7 @@ g.connect(ac.destination)
 
 
 
-wai(window, ac, function (unlocked) {
+wai(document.body, ac, function (unlocked) {
   console.log('boop\'d yah')
   osc.start(ac.currentTime)
 })

@@ -6,10 +6,10 @@ module.exports = function (el, ac, cb) {
     source.connect(ac.destination)
     source.start(ac.currentTime)
     setTimeout(function() {
+      el.removeEventListener('mousedown', handleIOS, false)
+      el.removeEventListener('touchend', handleIOS, false)
       cb(source.playbackState === source.PLAYING_STATE || source.playbackState === source.FINISHED_STATE)
     }, 1)
-    el.removeEventListener('mousedown', handleIOS, false)
-    el.removeEventListener('touchend', handleIOS, false)
   }
   el.addEventListener('mousedown', handleIOS, false)
   el.addEventListener('touchend', handleIOS, false)
